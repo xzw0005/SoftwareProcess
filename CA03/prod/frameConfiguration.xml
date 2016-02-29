@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+<definition component="Environment">
+<parm name="rotationalPeriod">10000000</parm>
+</definition>
+
+<definition component="Monitor">
+<parm name="logFile">logfile.txt</parm>
+</definition>
+
+<definition component="StarSensor">
+<parm name="fieldOfView">0.174533</parm>
+<parm name="starFile">SAOChart.txt</parm>
+</definition>
+
+<definition component ="Device">
+</definition>
+<frame rate="1111111">
+description
+initialize initialize(architectureFile)
+- the file name violates the parameter specifications
+- no file exists by the specified file name
+- the file contains invalid information
+The controller remains in the state it is was in before the method
+was invoked.
+The architecture file is of the form:
+<device>Device</device>
+<device>StarSensor</device>
+<device>Device</device>
+</frame>
+
+</configuration>

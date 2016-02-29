@@ -1,0 +1,29 @@
+<configuration>
+
+<definition component="Environment">
+<parm name="startTime">500</parm>
+<parm name="rotationalPeriod">10000000</parm>
+<parm name="degradation">101</parm>
+</definition>
+	
+<definition component="Monitor">
+<parm name="logFile">logfile.txt</parm>
+</definition>
+	
+<definition component="StarSensor">
+<parm name="fieldOfView">0.174533</parm>
+<parm name="starFile">SAOChart.txt</parm>
+</definition>
+	
+<definition component ="Device">
+</definition>
+
+<definition component="SolarCollector">
+</definition>
+
+	
+<frame rate="1000000">
+<device>SolarCollector</device>
+</frame>
+	
+</configuration>		

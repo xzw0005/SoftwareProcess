@@ -1,0 +1,23 @@
+<configuration>
+
+<definition component="Environment">
+<parm name="rotationalPeriod">10000000</parm>
+</definition>
+	
+<definition component="Monitor">
+<parm name="logFile">200020LogFile.txt</parm>
+</definition>
+	
+<definition component="StarSensor">
+<parm name="fieldOfView">0.17453292519945</parm>
+<parm name="starFile">CA03StarTestChart.txt</parm>
+</definition>
+	 
+<definition component ="Device">
+</definition>
+	
+<frame rate="10000000">
+<device>StarSensor</device>
+</frame>
+	
+</configuration>		

@@ -1,0 +1,25 @@
+<configuration>
+
+<definition component="Environment">
+<parm name="rotationalPeriod">10000000</parm>
+</definition>
+	
+<definition component="Monitor">
+<parm name="logFile">logfile.txt</parm>
+</definition>
+	
+<definition component="StarSensor">
+<parm>0.174533</parm>
+<parm name="starFile">SAOChart.txt</parm>
+</definition>
+	
+<definition component ="Device">
+</definition>
+	
+<frame rate="1000000">
+<device>Device</device>
+<device>StarSensor</device>
+<device>Device</device>
+</frame>
+	
+</configuration>		
